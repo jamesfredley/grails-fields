@@ -65,12 +65,15 @@ dependencies {
     testImplementation "org.grails:grails-gorm-testing-support"
 
     testImplementation 'org.javassist:javassist:3.29.0-GA'
-    testImplementation "org.codehaus.groovy:groovy-dateutil"
+    testImplementation "org.apache.groovy:groovy-dateutil"
     testImplementation "cglib:cglib-nodep:2.2.2"
     testImplementation("org.jodd:jodd-wot:$joddWotVersion") {
         exclude module: 'slf4j-api'
         exclude module: 'asm'
     }
+
+    testImplementation "org.apache.groovy:groovy-test-junit5:$groovyVersion"
+    testImplementation "org.spockframework:spock-core:$spockVersion", { transitive = false }
 }
 
 tasks.withType(GroovyCompile).configureEach {
