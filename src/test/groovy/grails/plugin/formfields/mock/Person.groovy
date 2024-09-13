@@ -20,7 +20,7 @@ class Person {
 	byte[] anotherPicture
 	String biography
 
-    transient String getTransientText() {
+    def String getTransientText() {
         "transient text"
     }
 

@@ -144,7 +144,8 @@ class DelegatingBeanPropertyAccessorImpl implements BeanPropertyAccessor {
 
     private List<Class> getSuperclassesAndInterfaces(Class type) {
         List<Class> superclasses = []
-        superclasses.addAll(ClassUtils.getAllSuperclasses(ClassUtils.primitiveToWrapper(type)))
+        Collection<Class> items = ClassUtils.getAllSuperclasses(ClassUtils.primitiveToWrapper(type))
+        superclasses.addAll(items)
         for (Object it in ClassUtils.getAllInterfaces(type)) {
             Class interfaceCls = (Class) it
             String name = interfaceCls.name

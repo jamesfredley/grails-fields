@@ -7,6 +7,7 @@ import grails.plugin.formfields.mock.Book
 import grails.plugin.formfields.mock.Person
 import grails.plugin.formfields.mock.Product
 import grails.testing.web.taglib.TagLibUnitTest
+import groovy.xml.XmlSlurper
 import spock.lang.Issue
 
 @Issue('https://github.com/grails-fields-plugin/grails-fields/issues/45')

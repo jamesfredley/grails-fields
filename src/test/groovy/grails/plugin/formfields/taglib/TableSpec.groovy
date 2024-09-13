@@ -7,6 +7,7 @@ import grails.plugin.formfields.mock.Address
 import grails.plugin.formfields.mock.Employee
 import grails.plugin.formfields.mock.Person
 import grails.testing.web.taglib.TagLibUnitTest
+import groovy.xml.XmlSlurper
 import spock.lang.Issue
 import spock.lang.Shared
 import spock.lang.Unroll
